@@ -1,3 +1,16 @@
+Тестовое задание (фронт) для fulogy.com <З
+(online desktop constructor)
+
+Запустить:
+### `npm i`
+### `yarn start`
+
+Базовый простой шаблон
+https://github.com/kozlovtseva/fulogy/blob/master/src/template.png
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
