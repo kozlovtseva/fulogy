@@ -1,12 +1,12 @@
 import React from "react";
 
 import Constructor from "./containers/Constructor";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 
 const Layout = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Constructor />
     </div>
   );
