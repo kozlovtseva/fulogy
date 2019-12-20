@@ -1,17 +1,24 @@
 import React, { Component } from "react";
 
-import Carousel from "../components/constructor/Carousel";
+import Carousel from "./Carousel";
 import Info from "../components/constructor/Info";
 import TypeSelection from "../components/constructor/TypeSelection";
 
 // import styles from "./LampItem.module.css";
 
 class LampItem extends Component {
-  state = {};
+  state = {
+    type: "day"
+  };
+
   render() {
+    if (this.props.data === undefined) {
+      return <div className="spinner" />;
+    }
+    console.log(this.props.data.images.day);
     return (
       <div>
-        <Carousel images={this.props.data.images} />
+        <Carousel images={this.props.data.images[this.state.type]} />
         <div>
           <Info data={this.props.data} />
           <div>
