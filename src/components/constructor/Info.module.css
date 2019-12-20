@@ -1,0 +1,13 @@
+.Container {
+  padding: 20px 30px;
+}
+.Item {
+  display: flex;
+  margin-bottom: 10px;
+}
+.Title {
+  width: 200px;
+}
+.Text {
+  width: 200px;
+}
