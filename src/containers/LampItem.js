@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Carousel from "./Carousel";
 import Info from "../components/constructor/Info";
 import TypeSelection from "../components/constructor/TypeSelection";
+import Modal from "../components/Modal";
 
 import styles from "./LampItem.module.css";
 
@@ -13,7 +14,14 @@ class LampItem extends Component {
 
   changeLight = type => {
     this.setState({
-      type: type
+      type: type,
+      modal: false
+    });
+  };
+
+  toggleModal = () => {
+    this.setState({
+      modal: !this.state.modal
     });
   };
 
@@ -21,13 +29,19 @@ class LampItem extends Component {
     if (this.props.data === undefined) {
       return <div className="spinner" />;
     }
-    return (
+    let item = this.state.modal ? (
+      <Modal onClick={this.toggleModal} />
+    ) : (
       <div className={styles.Container}>
         <Carousel images={this.props.data.images[this.state.type]} />
         <div className={styles.InfoBlock}>
           <Info data={this.props.data} />
           <div className={styles.ButtonBlock}>
-            <button className={styles.Button} type="button">
+            <button
+              onClick={() => this.toggleModal()}
+              className={styles.Button}
+              type="button"
+            >
               i
             </button>
             <div className={styles.Text}>
@@ -38,6 +52,7 @@ class LampItem extends Component {
         </div>
       </div>
     );
+    return <>{item}</>;
   }
 }
 

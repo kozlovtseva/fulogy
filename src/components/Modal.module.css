@@ -1,0 +1,16 @@
+.Container {
+  padding: 30px 100px 30px 30px;
+  min-height: 400px;
+}
+.Button {
+  color: #eae8e8;
+  display: flex;
+  margin-bottom: 30px;
+}
+.Button:hover {
+  color: #000;
+  cursor: pointer;
+}
+.Icon {
+  margin-right: 10px;
+}
