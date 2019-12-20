@@ -7,7 +7,26 @@
       "guaranty": "3 года",
       "installation": "Да",
       "sum": "2594 рублей",
-      "images": ["kitchen_1", "kitchen_2", "kitchen_3"]
+      "images": [
+        {
+          "id": 1,
+          "day": "kitchen_1",
+          "warm": "kitchen_1_warm",
+          "cold": "kitchen_1_cold"
+        },
+        {
+          "id": 2,
+          "day": "kitchen_2",
+          "warm": "kitchen_2_warm",
+          "cold": "kitchen_2_cold"
+        },
+        {
+          "id": 3,
+          "day": "kitchen_3",
+          "warm": "kitchen_3_warm",
+          "cold": "kitchen_3_cold"
+        }
+      ]
     }
   ]
 }

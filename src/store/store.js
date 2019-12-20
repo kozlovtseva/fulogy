@@ -10,7 +10,6 @@ import { lampsReducer } from "./reducers/lampsReducer";
 const reducers = combineReducers({
   lamps: lampsReducer
 });
-console.log(reducers);
 
 const middleware = applyMiddleware(promise, logger, thunk);
 
