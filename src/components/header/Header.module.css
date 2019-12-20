@@ -1,0 +1,27 @@
+.Container {
+  background-color: #000;
+  display: flex;
+  height: 100px;
+  padding: 20px;
+}
+.Logo {
+  justify-self: flex-start;
+}
+.Items {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.Burger {
+  background-image: repeating-linear-gradient(
+    #fff,
+    #fff 2px,
+    transparent 3px,
+    transparent 10px
+  );
+  cursor: pointer;
+  height: 28px;
+  margin-left: 20px;
+  width: 25px;
+}
