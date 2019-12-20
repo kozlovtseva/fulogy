@@ -2,7 +2,7 @@ import React from "react";
 
 import NavigationItem from "./NavigationItem";
 
-// import styles from "./Navigation.module.css";
+import styles from "./Navigation.module.css";
 
 const Navigation = () => {
   let navigationItems = [
@@ -18,7 +18,7 @@ const Navigation = () => {
   let list = navigationItems.map((value, index) => {
     return <NavigationItem key={index} name={value} />;
   });
-  return <ul>{list}</ul>;
+  return <ul className={styles.Container}>{list}</ul>;
 };
 
 export default Navigation;

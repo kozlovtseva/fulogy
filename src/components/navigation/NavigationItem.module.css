@@ -1,0 +1,16 @@
+.Item {
+  align-items: center;
+  display: flex;
+  background-color: #f7f6f6;
+  border: 1px solid #464545;
+  font-size: 18px;
+  justify-content: center;
+  height: 86px;
+  padding: 5px;
+  text-align: center;
+  width: 191px;
+}
+.ItemActive {
+  color: #fff;
+  background-color: #12b8ff;
+}
