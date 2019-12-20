@@ -1,0 +1,41 @@
+.Container {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 30px;
+}
+.Image {
+  border-radius: 5px;
+  width: 140px;
+  height: 84.72px;
+}
+.Type {
+  cursor: pointer;
+  margin-right: 20px;
+  position: relative;
+}
+.Text {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  bottom: 0;
+  color: #fff;
+  height: 31px;
+  line-height: 31px;
+  text-align: center;
+  position: absolute;
+  width: 140px;
+}
+.Mark {
+  background: #12b8ff;
+  border-radius: 5px;
+  display: none;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+  position: absolute;
+  left: 85%;
+  top: 5%;
+  width: 15px;
+}
+.MarkActive {
+  display: block;
+}

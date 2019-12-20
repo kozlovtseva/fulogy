@@ -11,6 +11,12 @@ class LampItem extends Component {
     type: "day"
   };
 
+  changeLight = type => {
+    this.setState({
+      type: type
+    });
+  };
+
   render() {
     if (this.props.data === undefined) {
       return <div className="spinner" />;
@@ -26,7 +32,7 @@ class LampItem extends Component {
               <p>Выберите цвет свечения</p>
             </div>
           </div>
-          <TypeSelection />
+          <TypeSelection state={this.state.type} onClick={this.changeLight} />
         </div>
       </div>
     );
