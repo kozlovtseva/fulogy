@@ -2,3 +2,34 @@
   display: flex;
   min-height: 500px;
 }
+.InfoBlock {
+  width: 50%;
+  margin-bottom: 30px;
+}
+.ButtonBlock {
+  background: #12b8ff;
+  color: #fff;
+  display: flex;
+  height: 98px;
+  margin-bottom: 30px;
+}
+.Button {
+  background: #00a8ef;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  width: 98px;
+}
+.Button:hover {
+  background: #fff;
+  color: #00a8ef;
+  cursor: pointer;
+  outline-style: none;
+}
+.Text {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}

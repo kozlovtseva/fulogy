@@ -24,11 +24,13 @@ class LampItem extends Component {
     return (
       <div className={styles.Container}>
         <Carousel images={this.props.data.images[this.state.type]} />
-        <div>
+        <div className={styles.InfoBlock}>
           <Info data={this.props.data} />
-          <div>
-            <button type="button">i</button>
-            <div>
+          <div className={styles.ButtonBlock}>
+            <button className={styles.Button} type="button">
+              i
+            </button>
+            <div className={styles.Text}>
               <p>Выберите цвет свечения</p>
             </div>
           </div>
