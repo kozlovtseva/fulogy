@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 
-import { getLamps } from "../store/actions/lampsActions";
+import { getLamps } from "../../store/actions/lampsActions";
 import { connect } from "react-redux";
 
-import Navigation from "../components/navigation/Navigation";
+import Navigation from "../../components/navigation/Navigation";
 import LampItem from "./LampItem";
-import Header from "../components/header/Header";
 
 // import styles from "./Constructor.module.css";
 
@@ -17,7 +16,6 @@ class Constructor extends Component {
   render() {
     return (
       <>
-        <Header />
         <LampItem data={this.props.lamps.lamps} />
         <Navigation />
       </>

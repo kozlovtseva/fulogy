@@ -1,12 +1,12 @@
 import React from "react";
 
-import Constructor from "./containers/Constructor";
-// import Header from "./components/Header";
+import Constructor from "./containers/constructor/Constructor";
+import Header from "./containers/header/Header";
 
 const Layout = () => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <Constructor />
     </>
   );

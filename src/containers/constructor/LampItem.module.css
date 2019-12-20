@@ -1,17 +1,17 @@
 .Container {
   background-color: #f7f6f6;
   display: flex;
-  min-height: 500px;
+  min-height: 450px;
 }
 .InfoBlock {
   width: 50%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .ButtonBlock {
   background: #12b8ff;
   color: #fff;
   display: flex;
-  height: 98px;
+  height: 65px;
   margin-bottom: 30px;
 }
 .Button {
@@ -20,7 +20,7 @@
   font-size: 24px;
   font-weight: 700;
   text-align: center;
-  width: 98px;
+  width: 78px;
 }
 .Button:hover {
   background: #fff;

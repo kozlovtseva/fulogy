@@ -1,21 +1,21 @@
 import React, { Component } from "react";
 
 import Carousel from "./Carousel";
-import Info from "../components/constructor/Info";
-import TypeSelection from "../components/constructor/TypeSelection";
-import Modal from "../components/Modal";
+import Info from "../../components/constructor/Info";
+import TypeSelection from "../../components/constructor/TypeSelection";
+import Modal from "../../components/Modal";
 
 import styles from "./LampItem.module.css";
 
 class LampItem extends Component {
   state = {
-    type: "day"
+    type: "day",
+    modal: false
   };
 
   changeLight = type => {
     this.setState({
-      type: type,
-      modal: false
+      type: type
     });
   };
 

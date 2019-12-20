@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import CarouselIndicator from "../components/carousel/CarouselIndicator";
-import CarouselSlide from "../components/carousel/CarouselSlide";
+import CarouselIndicator from "../../components/carousel/CarouselIndicator";
+import CarouselSlide from "../../components/carousel/CarouselSlide";
 
 import styles from "./Carousel.module.css";
 
