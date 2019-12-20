@@ -5,10 +5,10 @@ import Constructor from "./containers/Constructor";
 
 const Layout = () => {
   return (
-    <div>
+    <>
       {/* <Header /> */}
       <Constructor />
-    </div>
+    </>
   );
 };
 

@@ -15,10 +15,10 @@ class Constructor extends Component {
 
   render() {
     return (
-      <div>
+      <>
         <LampItem data={this.props.lamps.lamps} />
         <Navigation />
-      </div>
+      </>
     );
   }
 }
