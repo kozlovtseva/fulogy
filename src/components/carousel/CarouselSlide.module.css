@@ -1,0 +1,8 @@
+.Slide {
+  margin-right: auto;
+  margin-left: auto;
+  display: none;
+}
+.SlideActive {
+  display: block;
+}

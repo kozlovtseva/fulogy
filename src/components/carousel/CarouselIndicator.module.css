@@ -1,0 +1,11 @@
+.Indicator {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #111;
+  cursor: pointer;
+  opacity: 0.15;
+}
+.IndicatorActive {
+  opacity: 0.75;
+}
