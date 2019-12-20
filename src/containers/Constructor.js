@@ -4,12 +4,11 @@ import { getLamps } from "../store/actions/lampsActions";
 import { connect } from "react-redux";
 
 import Navigation from "../components/navigation/Navigation";
+import LampItem from "./LampItem";
 
 // import styles from "./Constructor.module.css";
 
 class Constructor extends Component {
-  state = {};
-
   componentDidMount() {
     this.props.dispatch(getLamps());
   }
@@ -17,7 +16,7 @@ class Constructor extends Component {
   render() {
     return (
       <div>
-        {/* <Item data={this.props.lamps.lamps} /> */}
+        <LampItem data={this.props.lamps.lamps} />
         <Navigation />
       </div>
     );
