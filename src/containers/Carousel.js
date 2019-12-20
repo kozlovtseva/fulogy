@@ -21,7 +21,7 @@ class Carousel extends Component {
       return <div className="spinner" />;
     }
     return (
-      <div>
+      <>
         <ul className={styles.Slides}>
           {this.props.images.map((image, index) => (
             <CarouselSlide
@@ -31,19 +31,21 @@ class Carousel extends Component {
               slide={image}
             />
           ))}
+          <li>
+            <ul className={styles.Indicators}>
+              {this.props.images.map((slide, index) => (
+                <CarouselIndicator
+                  key={index}
+                  index={index}
+                  activeIndex={this.state.activeIndex}
+                  isActive={this.state.activeIndex === index}
+                  onClick={() => this.goToSlide(index)}
+                />
+              ))}
+            </ul>
+          </li>
         </ul>
-        <ul className={styles.Indicators}>
-          {this.props.images.map((slide, index) => (
-            <CarouselIndicator
-              key={index}
-              index={index}
-              activeIndex={this.state.activeIndex}
-              isActive={this.state.activeIndex === index}
-              onClick={() => this.goToSlide(index)}
-            />
-          ))}
-        </ul>
-      </div>
+      </>
     );
   }
 }

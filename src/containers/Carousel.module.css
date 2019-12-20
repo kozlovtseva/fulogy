@@ -1,6 +1,16 @@
+.Slides {
+  align-items: center;
+  border: 1px solid #9e9d9d;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 50%;
+}
 .Indicators {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 20px;
+  justify-content: space-between;
+  left: 45%;
+  top: 85%;
+  position: absolute;
+  width: 60px;
 }

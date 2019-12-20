@@ -1,0 +1,4 @@
+.Container {
+  display: flex;
+  min-height: 500px;
+}

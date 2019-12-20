@@ -11,7 +11,11 @@ const CarouselSlide = props => {
           : styles.Slide
       }
     >
-      <img src={require(`../../images/${props.slide}`)} alt="light" />
+      <img
+        className={styles.Image}
+        src={require(`../../images/${props.slide}`)}
+        alt="light"
+      />
     </li>
   );
 };
