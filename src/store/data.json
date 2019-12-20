@@ -1,32 +1,19 @@
 {
-  "lamps": [
-    {
-      "class": "Standart",
-      "capacity": "59 Вт.",
-      "intensity": "3459 Люмен = 7,5 ламп накаливания по 40 Вт",
-      "guaranty": "3 года",
-      "installation": "Да",
-      "sum": "2594 рублей",
-      "images": [
-        {
-          "id": 1,
-          "day": "kitchen_1",
-          "warm": "kitchen_1_warm",
-          "cold": "kitchen_1_cold"
-        },
-        {
-          "id": 2,
-          "day": "kitchen_2",
-          "warm": "kitchen_2_warm",
-          "cold": "kitchen_2_cold"
-        },
-        {
-          "id": 3,
-          "day": "kitchen_3",
-          "warm": "kitchen_3_warm",
-          "cold": "kitchen_3_cold"
-        }
-      ]
+  "lamps": {
+    "class": "Standart",
+    "capacity": "59 Вт.",
+    "intensity": "3459 Люмен = 7,5 ламп накаливания по 40 Вт",
+    "guaranty": "3 года",
+    "installation": "Да",
+    "sum": "2594 рублей",
+    "images": {
+      "day": ["kitchen_1_day.png", "kitchen_2_day.png", "kitchen_3_day.png"],
+      "warm": [
+        "kitchen_1_warm.png",
+        "kitchen_2_warm.png",
+        "kitchen_3_warm.png"
+      ],
+      "cold": ["kitchen_1_cold.png", "kitchen_2_cold.png", "kitchen_3_cold.png"]
     }
-  ]
+  }
 }
